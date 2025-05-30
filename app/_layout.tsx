@@ -1,17 +1,38 @@
 import '../global.css';
 
 import { Stack } from 'expo-router';
+import { TodoProvider } from '~/context/todoContext';
+import { ThemeProvider, useTheme } from '~/context/themeContext';
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
   initialRouteName: '(tabs)',
 };
 
+function RootNavigator() {
+  const { colors } = useTheme();
+
+  return (
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: colors.surface,
+        },
+        headerTintColor: colors.text,
+        contentStyle: {
+          backgroundColor: colors.background,
+        },
+      }}>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
+
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-    </Stack>
+    <ThemeProvider>
+      <TodoProvider>
+        <RootNavigator />
+      </TodoProvider>
+    </ThemeProvider>
   );
 }
