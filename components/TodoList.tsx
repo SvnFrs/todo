@@ -1,6 +1,6 @@
 // Doan Vo Quoc Thai - CE170410
 
-import { View, Text, FlatList } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { useTodo } from '~/context/todoContext';
 import { useTheme } from '~/context/themeContext';
 import { TodoItem } from './TodoItem';
@@ -12,6 +12,23 @@ export function TodoList() {
   const { colors } = useTheme();
 
   const renderTodoItem = ({ item }: { item: Todo }) => <TodoItem todo={item} />;
+
+  // Show loading indicator while loading todos
+  if (state.isLoading) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color={colors.primary} />
+        <Text
+          style={{
+            marginTop: 16,
+            fontSize: 16,
+            color: colors.textSecondary,
+          }}>
+          Loading your todos...
+        </Text>
+      </View>
+    );
+  }
 
   return (
     <View style={{ flex: 1 }}>
