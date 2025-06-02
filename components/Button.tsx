@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { forwardRef } from 'react';
 import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 import { useTheme } from '~/context/themeContext';

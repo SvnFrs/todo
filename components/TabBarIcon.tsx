@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { StyleSheet } from 'react-native';
 

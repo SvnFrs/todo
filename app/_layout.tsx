@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import '../global.css';
 
 import { Stack } from 'expo-router';

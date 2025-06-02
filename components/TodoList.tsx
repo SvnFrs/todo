@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { View, Text, FlatList } from 'react-native';
 import { useTodo } from '~/context/todoContext';
 import { useTheme } from '~/context/themeContext';

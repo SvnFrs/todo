@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { SafeAreaView } from 'react-native';
 import { useTheme } from '~/context/themeContext';
 

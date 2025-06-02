@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import React, { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 

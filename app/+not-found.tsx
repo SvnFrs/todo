@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { Link, Stack } from 'expo-router';
 
 import { Text, View } from 'react-native';

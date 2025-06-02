@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { useState } from 'react';
 import { View, Text, TextInput, Alert, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';

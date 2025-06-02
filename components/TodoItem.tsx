@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { View, Text, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { Todo } from '~/reducers/todoReducer';

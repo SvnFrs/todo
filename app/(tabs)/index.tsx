@@ -1,3 +1,5 @@
+// Doan Vo Quoc Thai - CE170410
+
 import { Stack } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
 import { TodoList } from '~/components/TodoList';
